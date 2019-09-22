@@ -37,6 +37,7 @@ public class JsonUtils {
                     alsoKnownAsList.add(alsoKnownAsArray.getString(i));
                 }
             }
+            sandwich.setAlsoKnownAs(alsoKnownAsList);
 
             String placeOfOriginString = baseJsonResponse.getString("placeOfOrigin");
             sandwich.setPlaceOfOrigin(placeOfOriginString);
