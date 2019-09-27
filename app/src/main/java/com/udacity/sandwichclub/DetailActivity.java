@@ -15,6 +15,9 @@ import com.udacity.sandwichclub.utils.JsonUtils;
 
 import java.util.List;
 
+/**
+ * The DetailActivity displays the details of a single sandwich
+ */
 public class DetailActivity extends AppCompatActivity {
 
     /**

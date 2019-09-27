@@ -9,6 +9,9 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * The MainActivity displays the list of all sandwiches available in the menu
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
