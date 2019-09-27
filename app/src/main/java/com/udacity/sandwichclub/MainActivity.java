@@ -16,13 +16,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* Get the Sandwich data in an array */
         String[] sandwiches = getResources().getStringArray(R.array.sandwich_names);
+
+
+        // Setting the Array Adapter with simple list layout and Sandwich Array
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, sandwiches);
 
-        // Simplification: Using a ListView instead of a RecyclerView
+        /* Simplification: Using a ListView instead of a RecyclerView */
         ListView listView = findViewById(R.id.sandwiches_listview);
+
+
+        /* Setting adapter for the listView */
         listView.setAdapter(adapter);
+
+        /* Setting the OnItemClickLister for the listview */
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -31,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // Calling DetailActivity on List Item Click using Intent
     private void launchDetailActivity(int position) {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra(DetailActivity.EXTRA_POSITION, position);

@@ -2,6 +2,9 @@ package com.udacity.sandwichclub.model;
 
 import java.util.List;
 
+/**
+ * Sandwich object encapsulated variables describing a sandwich
+ */
 public class Sandwich {
 
     private String mainName;
@@ -25,6 +28,8 @@ public class Sandwich {
         this.image = image;
         this.ingredients = ingredients;
     }
+
+    /* Getters & Setters Method for sandwich class */
 
     public String getMainName() {
         return mainName;

@@ -11,8 +11,18 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * JSONUtils Class contains json related methods
+ */
 public class JsonUtils {
 
+    /**
+     * parseSandwichJson method for parsing json string properly
+     * and returns Sandwich object
+     *
+     * @param sandwichJSON json string to be parsed
+     * @return Sandwich class object
+     */
     public static Sandwich parseSandwichJson(String sandwichJSON) {
 
         List<String> alsoKnownAsList;
